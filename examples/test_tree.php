@@ -6,6 +6,15 @@ use context\LogContextDecorator;
 use context\DebugContextDecorator;
 use examples\tree\TreeContext;
 
+echo PHP_EOL.PHP_EOL;
+echo "1".PHP_EOL;
+echo "|".PHP_EOL;
+echo "2".PHP_EOL;
+echo "|\\".PHP_EOL;
+echo "3 4".PHP_EOL;
+echo "  |".PHP_EOL;
+echo "  5".PHP_EOL;
+
 echo PHP_EOL.PHP_EOL."1 -> 2 -> 3".PHP_EOL.PHP_EOL;
 
 $context = new LogContextDecorator(new TreeContext(TreeContext::step1()));
