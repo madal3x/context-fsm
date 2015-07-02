@@ -7,6 +7,7 @@ It also has decorators for logging the specific actions taken, or for a debug mo
 I have wrote two examples, one for a linear flow, and one for a tree flow. You can run the examples like:
 
 php examples/test_linear.php
+
 php examples/test_tree.php
 
 This was based on Robert Martin's papers:
