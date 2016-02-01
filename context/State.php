@@ -21,6 +21,12 @@ abstract class State {
     abstract public function nextPossibleStates(Context $context);
     abstract public function previousState(Context $context);
 
+    /**
+     * This function encapsulates the State dependant logic
+     * it should be abstract here and defer implementations
+     * to the State class implementations
+     * (the echo implementation is for demo purposes)
+     */
     public function moveHook(Context $context) {
         echo PHP_EOL.get_called_class()."::moveHook".PHP_EOL;
     }
